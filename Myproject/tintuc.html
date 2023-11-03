@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="/Myproject/img/icon/icon-main.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Hoodie", "Áo thun", "Quần", "Giày", "Hàng hiệu"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        };
+    </script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+<style>
+    .image-container {
+        width: 300px; /* Đặt kích thước khung chứa ảnh */
+        height: 200px;
+        overflow: hidden; /* Ẩn phần ảnh vượt quá kích thước khung */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Thu nhỏ ảnh về kích thước tối đa là khung chứa */
+        max-height: 100%;
+    }
+</style>
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://www.vietnamplus.vn/thoi-trang-secondhand-suc-hut-va-nhung-kien-thuc-can-biet/706190.vnp" target="_blank">
+                    <img src="/Myproject/img/tintuc1.gif">
+                    <h2>Thời trang secondhand mang đến sức hút độc đáo</h2>
+                </a>
+                <br/>
+                <h5>Tin tức &emsp;1 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.chotot.com/kinh-nghiem/co-nen-mua-giay-2hand.html" target="_blank">
+                    <img src="/Myproject/img/tintuc2.jpg">
+                    <h2>Muốn sử dụng hàng hiệu nhưng giá thành quá đắt đỏ ?</h2>
+                </a>
+                <br/>
+                <h5>Tạp chí &emsp; 9 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://yenmay2hand.com/mac-do-secondhand-co-hai-gi.html" target="_blank">
+                    <img src="/Myproject/img/tintuc3.jpg">
+                    <h2>Xu hướng hiện giờ đang là gì ?</h2>
+                </a>
+                <br/>
+                <h5>Tạp chí &emsp; 12 giờ</h5>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+    </div>
+
+</body>
+
+</html>

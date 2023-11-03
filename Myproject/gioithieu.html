@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous" />
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/topnav.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/taikhoan.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/gioithieu.css" />
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Hoodie", "Áo thun", "Quần", "Giày", "Hàng hiệu"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        };
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <script>
+            addTopNav();
+        </script>
+
+        <section style="min-height: 85vh">
+            <script>
+                addHeader();
+            </script>
+
+            <div class="page-gt">
+                <h4 class="page-header">Giới thiệu</h4>
+                <div class="page-info">
+                    <p>
+                        Được thành lập từ năm 1996, chúng tôi là một trong những nhà
+                        phân phối tại Tp.HCM và kể từ năm 2000
+                    </p>
+                    <br />
+                    <p>
+
+                        <p>Shop 2hand là một cửa hàng chuyên kinh doanh các sản phẩm đã qua sử dụng như quần áo, giày dép,
+                        đồ điện tử, đồ nội thất và nhiều loại sản phẩm khác. Chúng tôi nhận mua bán các sản phẩm 2hand
+                        chất lượng cao với mục đích tạo ra sự tiết kiệm và bảo vệ môi trường.</p><br />
+
+                        <p>Tại shop 2hand, chúng tôi cam kết cung cấp những sản phẩm chất lượng đảm bảo. Trước khi đưa sản
+                        phẩm lên kệ, chúng tôi kiểm tra kỹ lưỡng để đảm bảo chúng còn trong tình trạng tốt và hoạt động
+                        tốt. Chúng tôi cũng đảm bảo vệ sinh và vệ sinh các sản phẩm trước khi bán.</p><br />
+
+                        <p>Shop 2hand có một loạt các sản phẩm khác nhau để phục vụ nhu cầu của khách hàng. Khách hàng có
+                        thể tìm thấy quần áo, giày dép, túi xách, đồ điện tử như điện thoại di động, máy tính xách tay,
+                        máy ảnh, đồ nội thất như bàn ghế, giường, tủ và nhiều hơn nữa. Tất cả các sản phẩm được cung cấp
+                        với giá cả phải chăng và có thể tiết kiệm rất nhiều so với việc mua mới.</p><br />
+
+                        <p>Ngoài ra, chúng tôi cũng nhận mua lại các sản phẩm đã qua sử dụng từ khách hàng. Nếu bạn có các
+                        sản phẩm không sử dụng nữa hoặc muốn nâng cấp lên sản phẩm mới, chúng tôi sẽ đánh giá và đề xuất
+                        một giá hợp lý để mua lại từ bạn. Điều này giúp bạn không chỉ giải phóng không gian trong nhà
+                        của mình mà còn kiếm được một số tiền từ việc bán lại sản phẩm đã qua sử dụng.</p><br />
+
+                        <p>Với mong muốn mang lại sự hài lòng cho khách hàng, chúng tôi luôn lắng nghe ý kiến ​​phản hồi
+                        của khách hàng và cố gắng cải thiện dịch vụ của mình. Chúng tôi cam kết mang lại trải nghiệm mua
+                        sắm tốt nhất cho khách hàng và đảm bảo rằng tất cả các giao dịch được tiến hành một cách minh
+                        bạch và công bằng.</p><br />
+
+                        <p>Hãy đến shop 2hand để khám phá những sản phẩm tuyệt vời và tiết kiệm ngân sách của bạn. Chúng
+                        tôi luôn sẵn lòng phục vụ bạn và đảm bảo rằng bạn sẽ tìm thấy những gì bạn đang tìm kiếm.</p><br />
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            addContainTaiKhoan();
+        </script>
+
+        <div class="footer">
+            <script>
+                addFooter();
+            </script>
+        </div>
+
+        <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+    </div>
+</body>
+
+</html>
